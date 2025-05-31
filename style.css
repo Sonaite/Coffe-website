@@ -271,7 +271,7 @@ header{
     width: calc(100% / 3 - 110px);
 
 }
-.menu-section .menu-list .menu-item .menu-image{
+.menu-section .menu-list .menu-intem .menu-image{
     max-width: 83%;
     aspect-ratio: 1;
 
@@ -313,6 +313,22 @@ header{
 }
 .testimonials-section  .testimonials .feedback{
     line-height: 25px;
+
+}
+.testimonials-section .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secundary-color);
+
+}
+.testimonials-section .swiper-slide-button {
+    color: var(--secundary-color);
+    transition: 0.3s ease;
+
+}
+.testimonials-section .swiper-slide-button:hover{
+    color: var(--primary-color);
 
 }
 

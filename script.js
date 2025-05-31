@@ -1,15 +1,15 @@
 
-const  menuOpemButton = document.querySelector("#menu-open-button");
-const  menuCloseButton  = document.querySelector("#menu-close-button");
-menuOpemButton = addEventListener("click", () =>{
-  //Toggle mobile menu visibility
+const menuOpenButton = document.querySelector("#menu-open-button");
+const menuCloseButton = document.querySelector("#menu-close-button");
 
-    document.body.classList.toggle("show-mobile-menu");
-  
+menuOpenButton.addEventListener("click", () => {
+  // Toggle mobile menu visibility
+  document.body.classList.toggle("show-mobile-menu");
 });
 
-//Close menu when the close buttun is clicked
-menuCloseButton.addEventListener("click" , () => menuOpemButton.click())
+// Close menu when the close button is clicked
+menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+
 
 
 //Initializar Swiper
@@ -17,10 +17,13 @@ menuCloseButton.addEventListener("click" , () => menuOpemButton.click())
 const swiper = new Swiper('.slider-wrapper', {
   
   loop: true,
+  spaceBetween:25,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
   },
 
   // Navigation arrows
@@ -28,6 +31,21 @@ const swiper = new Swiper('.slider-wrapper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+   
+  //responsive breackpoints
+  breakpoints: {
+    0:{
+      slidesPerView: 1
+    },
+    768:{
+      slidesPerView:2
+    },
+        1024:{
+      slidesPerView: 3
+    } 
+    
+
+  }
 
  
 });
