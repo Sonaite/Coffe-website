@@ -10,4 +10,5 @@ Inclui efeitos com Swiper.js e layout responsivo.
 - Swiper.js  
 
 ## Como visualizar  
+![Preview do site](images/preview.png)
 Acesse o site aqui: https://sonaite.github.io/Coffe-website/
